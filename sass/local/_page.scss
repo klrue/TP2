@@ -1,0 +1,68 @@
+.site-title{
+    font-family:$font__sitetitle;
+    font-size: clamp(2rem, #{"-0.875rem + 8.333vw"}, 4rem);
+    font-weight: bold;
+    margin-bottom: 0;
+    a{
+    text-decoration: none;
+    }
+    }.site-description{
+        font-family: $font__sitetitle;
+        font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 3.5rem);
+        font-weight: normal;
+        color: $color__linksite-title;
+        margin-top: 0;
+    }
+    
+    
+    .page-header{
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+    
+        .page-title{
+           
+            display: none;
+            // font-size: 4rem;
+            //color: blue;
+        }
+    
+        .archive-description{
+          
+             font-size: 2rem;
+            color: #66fcf1;
+           
+        }
+    }
+
+    //ajustement des widgets avec la page dans les articles
+    #primary
+    {
+        article
+        {
+            .entry-header
+            {
+                width: 60%;
+            }
+    
+            .entry-content
+            {
+                width: 60%;
+                text-align: justify;
+            }
+    
+            .entry-footer{
+                width: 60%;
+            }
+        }
+        .navigation
+        {
+            width: 60%;
+        }
+
+        #comments
+        {
+            width: 60%;;
+        }
+    }
+    
