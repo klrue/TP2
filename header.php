@@ -46,7 +46,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 	
-</div>
+
 				<!--<section class='carrousel'>
 		
 		

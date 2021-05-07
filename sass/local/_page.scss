@@ -15,6 +15,7 @@
     }
     
     
+    
     .page-header{
         margin-top: 130px;
         display: flex;
@@ -38,31 +39,33 @@
     //ajustement des widgets avec la page dans les articles
     #primary
     {
+
+        margin-top: 10vh;
         article
         {
             .entry-header
             {
-                width: 60%;
+                width: 80%;
             }
     
             .entry-content
             {
-                width: 60%;
+                width: 80%;
                 text-align: justify;
             }
     
             .entry-footer{
-                width: 60%;
+                width: 80%;
             }
         }
         .navigation
         {
-            width: 60%;
+            width: 80%;
         }
 
         #comments
         {
-            width: 60%;;
+            width: 80%;;
         }
     }
     

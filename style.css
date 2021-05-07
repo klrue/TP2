@@ -665,7 +665,7 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 80% 20%;
   grid-template-areas: "header header" "main sidebar" "footer footer";
 }
 
@@ -1604,25 +1604,29 @@ La barre du millieu
   color: #66fcf1;
 }
 
+#primary {
+  margin-top: 10vh;
+}
+
 #primary article .entry-header {
-  width: 60%;
+  width: 80%;
 }
 
 #primary article .entry-content {
-  width: 60%;
+  width: 80%;
   text-align: justify;
 }
 
 #primary article .entry-footer {
-  width: 60%;
+  width: 80%;
 }
 
 #primary .navigation {
-  width: 60%;
+  width: 80%;
 }
 
 #primary #comments {
-  width: 60%;
+  width: 80%;
 }
 
 /* local footer
@@ -1632,7 +1636,17 @@ La barre du millieu
   background-color: #1f2833;
   margin-right: 40px;
   color: white;
-  border-radius: 20px;
+  height: 120vh;
+}
+
+@media (min-width: 800px) {
+  .site-footer {
+    display: flex;
+    background-color: #1f2833;
+    margin-right: 40px;
+    color: white;
+    height: 35vh;
+  }
 }
 
 .site-footer .widget-footer {
@@ -1640,6 +1654,7 @@ La barre du millieu
   flex-direction: column;
   align-items: center;
   align-content: center;
+  padding-left: 15vw;
 }
 
 @media (min-width: 800px) {
@@ -1648,6 +1663,8 @@ La barre du millieu
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    padding-bottom: 10vh;
+    padding-left: 0vw;
   }
 }
 
@@ -1663,7 +1680,11 @@ La barre du millieu
 }
 
 .widget-area {
-  width: 40%;
-  background-color: blue;
+  margin-top: 10vh;
+  background-color: #1f2833;
+  color: white;
+  margin-right: 2.1vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
 }
 /*# sourceMappingURL=style.css.map */
