@@ -855,10 +855,12 @@ menu tablet
   0% {
     opacity: 0;
     transform: translateX(0) translateY(100px);
+    transform: scale(1.2);
   }
   100% {
     opacity: 1;
     transform: translateX(0) translateY(0);
+    box-shadow: 9px 5px 15px 5px #000000;
   }
 }
 
@@ -1335,6 +1337,12 @@ Liste des blocs de cours par type_de_cours
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
   background-color: #1f2833;
+  transition: all .2s ease-in-out;
+}
+
+.carrousel-2 .slide__conteneur .slide:nth-of-type(1):hover {
+  background-color: #303a46;
+  transform: scale(1.1);
 }
 
 .ctrl-carrousel {

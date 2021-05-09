@@ -10,6 +10,7 @@ margin-bottom: 10vh;
 }
 
 	ul {
+		
 		display: none;
 		position : absolute;
 		width : 100%;
@@ -149,6 +150,7 @@ menu tablet
 			justify-content: flex-start;
 			width : 400px;
 			animation : anim-sous-menu .5s both;
+			
 		}
 
 	ul {
@@ -162,10 +164,15 @@ menu tablet
 	0%{
 		opacity : 0;
 		transform : translateX(0) translateY(100px);
+		transform: scale(1.2);
+	
+		
 	}
 	100%{
 		opacity: 1;
 		transform : translateX(0) translateY(0);
+		-webkit-box-shadow: 9px 5px 15px 5px #000000; 
+		box-shadow: 9px 5px 15px 5px #000000;
 	}
 }
 
