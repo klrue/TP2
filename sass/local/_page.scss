@@ -45,27 +45,38 @@
         {
             .entry-header
             {
-                width: 80%;
+                @include tablet{
+                    width: 80%;
+                }
+               
             }
     
             .entry-content
             {
-                width: 80%;
+                @include tablet{
+                    width: 80%;
+                }
                 text-align: justify;
             }
     
             .entry-footer{
-                width: 80%;
+                @include tablet{
+                    width: 80%;
+                }
             }
         }
         .navigation
         {
-            width: 80%;
+            @include tablet{
+                width: 80%;
+            }
         }
 
         #comments
         {
-            width: 80%;;
+            @include tablet{
+                width: 80%;
+            }
         }
     }
     

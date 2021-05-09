@@ -1608,25 +1608,38 @@ La barre du millieu
   margin-top: 10vh;
 }
 
-#primary article .entry-header {
-  width: 80%;
+@media (min-width: 800px) {
+  #primary article .entry-header {
+    width: 80%;
+  }
 }
 
 #primary article .entry-content {
-  width: 80%;
   text-align: justify;
 }
 
-#primary article .entry-footer {
-  width: 80%;
+@media (min-width: 800px) {
+  #primary article .entry-content {
+    width: 80%;
+  }
 }
 
-#primary .navigation {
-  width: 80%;
+@media (min-width: 800px) {
+  #primary article .entry-footer {
+    width: 80%;
+  }
 }
 
-#primary #comments {
-  width: 80%;
+@media (min-width: 800px) {
+  #primary .navigation {
+    width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  #primary #comments {
+    width: 80%;
+  }
 }
 
 /* local footer
@@ -1680,11 +1693,18 @@ La barre du millieu
 }
 
 .widget-area {
-  margin-top: 10vh;
-  background-color: #1f2833;
-  color: white;
-  margin-right: 2.1vw;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .widget-area {
+    margin-top: 10vh;
+    background-color: #1f2833;
+    color: white;
+    margin-right: 2.1vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
