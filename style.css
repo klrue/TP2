@@ -1650,6 +1650,15 @@ La barre du millieu
   }
 }
 
+#primary #comment {
+  background-color: #1f2833;
+}
+
+#primary .form-submit input {
+  background-color: #1f2833;
+  color: white;
+}
+
 /* local footer
 --------------------------------------------- */
 .site-footer {
