@@ -2,15 +2,20 @@
 
     let bouton = document.getElementById('bout_nouvelles')
     let nouvelles = document.querySelector('.nouvelles section')
+    let annonce = document.getElementById('annonce')
    //bouton.addEventListener('mousedown', monAjax)
-    window.addEventListener('load', monAjax)
+    window.addEventListener('load',function(){
+        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=33&per_page=3', nouvelles)
+        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&per_page=1', annonce)
+    })
 
-
-    function monAjax()
+//fontion générale pour afficher la section nouvelles et annonces
+    function monAjax(requete, elmDom)
     {
        let maRequete = new XMLHttpRequest();
        console.log(maRequete)
-       maRequete.open('GET', monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=33&per_page=3');
+       maRequete.open('GET', requete);
+
        maRequete.onload = function () {
            console.log(maRequete)
            if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -20,13 +25,13 @@
                 chaineResultat += '<h2>' + elm.title.rendered + '</h2>'
                 chaineResultat += elm.content.rendered
                }
-               nouvelles.innerHTML = chaineResultat;
+               elmDom.innerHTML = chaineResultat;
+             
             }
-           
             else {
                console.log('La connexion est faite mais il y a une erreur')
            }
-       }
+       }//mesage d'erreur si erreur 
        maRequete.onerror = function () {
            console.log("erreur de connexion");
        }
@@ -41,10 +46,10 @@
     bout_ajout.addEventListener('mousedown',function()
     {
         let monArticle = {
-            "titre" : document.querySelector('.admin-rapide [name="title"]').value,
+            "title" : document.querySelector('.admin-rapide [name="title"]').value,
             "content" :  document.querySelector('.admin-rapide [name="content"]').value,
             "status" : "publish",
-            "categories" :[33]
+            "categories" :[35]
 
         }
         //console.log(monArticle);
