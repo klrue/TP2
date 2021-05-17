@@ -1235,6 +1235,7 @@ Liste des blocs de cours par type_de_cours
   animation-name: blink;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  color: red;
 }
 
 @keyframes blink {
