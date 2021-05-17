@@ -6,7 +6,7 @@
    //bouton.addEventListener('mousedown', monAjax)
     window.addEventListener('load',function(){
         monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=33&per_page=3', nouvelles)
-        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&per_page=3', annonce)
+        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&per_page=1', annonce)
     })
 
 
@@ -49,7 +49,7 @@
             "title" : document.querySelector('.admin-rapide [name="title"]').value,
             "content" :  document.querySelector('.admin-rapide [name="content"]').value,
             "status" : "publish",
-            "categories" :[35];
+            "categories" :[35]
 
         }
         //console.log(monArticle);
