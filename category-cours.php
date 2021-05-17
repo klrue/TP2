@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-//////////////////////////////////CATEGORY-COURS.PHP
+
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
