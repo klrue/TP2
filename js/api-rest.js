@@ -49,7 +49,7 @@
             "title" : document.querySelector('.admin-rapide [name="title"]').value,
             "content" :  document.querySelector('.admin-rapide [name="content"]').value,
             "status" : "publish",
-            "categories" :[35]
+            "categories" :[35];
 
         }
         //console.log(monArticle);
