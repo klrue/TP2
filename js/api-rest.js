@@ -5,8 +5,8 @@
     let annonce = document.getElementById('annonce')
    //bouton.addEventListener('mousedown', monAjax)
     window.addEventListener('load',function(){
-        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=33&order=desc', nouvelles)
-        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&order=desc', annonce)
+        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=33&per_page=3', nouvelles)
+        monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&per_page=3', annonce)
     })
 
 
