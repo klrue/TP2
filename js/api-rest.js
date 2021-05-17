@@ -9,7 +9,7 @@
         monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&per_page=1', annonce)
     })
 
-
+//fontion générale pour afficher la section nouvelles et annonces
     function monAjax(requete, elmDom)
     {
        let maRequete = new XMLHttpRequest();
