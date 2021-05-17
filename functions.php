@@ -191,6 +191,7 @@ function theme4w4_scripts() {
 	//	wp_enqueue_script( 'theme4w4-carrousel');
 	//ajout slider
 		wp_enqueue_script( 'theme4w4-slider');
+		//ajout api rest
 		wp_enqueue_script( 'theme4w4-api-rest');
 		wp_localize_script('theme4w4-api-rest', 'monObjJS', array(
 

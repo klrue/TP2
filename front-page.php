@@ -18,7 +18,7 @@ get_header();
 
 			<header class="page-header">
 			<section id="annonce"></section>
-			
+
 			<h1 class="page-title">Accueil</h1>
 				<?php
 				//the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -85,7 +85,7 @@ get_header();
 				
             </section>
 <?php endif ?>
-
+<!--section nouvelles dans la page web-->
 		</section>
 			<section class="nouvelles">
 			<!--<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>-->
