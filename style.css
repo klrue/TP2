@@ -1231,6 +1231,18 @@ Liste des blocs de cours par type_de_cours
   background-color: #66fcf1;
   border: 10px solid white;
   width: 70%;
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    background-color: #66fcf1;
+  }
+  to {
+    background-color: white;
+  }
 }
 
 /* local carrousel
