@@ -13,7 +13,7 @@
    
 
 
-
+//style pour le conteneur des slider cours
     .slide__conteneur {
         
       @include tablet{
@@ -34,7 +34,7 @@
             
 
         
-       
+       //style du slider en tant que tel
            
         .slide {
             width : 100%;
@@ -77,7 +77,7 @@
                 background-color :#1f2833;
                 transition: all .2s ease-in-out;
             }
-            
+            //Animation hover sur elm article cours
             &:nth-of-type(1):hover{
                 background-color: #303a46;
                 transform: scale(1.1);
@@ -89,7 +89,7 @@
     }
    
 }
-
+//styles elms de controle du slider cours
 .ctrl-carrousel {
     display : flex;
     justify-content: center;

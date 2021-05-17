@@ -1,3 +1,4 @@
+//style pour le titre du site
 .site-title{
     font-family:$font__sitetitle;
     font-size: clamp(2rem, #{"-0.875rem + 8.333vw"}, 4rem);
@@ -6,6 +7,7 @@
     a{
     text-decoration: none;
     }
+    //style desc su site
     }.site-description{
         font-family: $font__sitetitle;
         font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 3.5rem);
