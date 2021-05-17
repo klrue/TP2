@@ -31,7 +31,7 @@
             else {
                console.log('La connexion est faite mais il y a une erreur')
            }
-       }
+       }//mesage d'erreur si erreur 
        maRequete.onerror = function () {
            console.log("erreur de connexion");
        }

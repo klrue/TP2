@@ -1,3 +1,4 @@
+//fonction pour faire un menu burger dans laffiche format téléphone cellulaire
 (function(){
         let burger = document.getElementById('burger')
         let bar1 = document.querySelector('#burger div:nth-of-type(1)')

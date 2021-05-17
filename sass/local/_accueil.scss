@@ -42,7 +42,7 @@ body.home::after{
     font-size : clamp(.6rem, #{"-0.875rem + 8.333vw"},3rem);
 }
 
- 
+ //divs pour séparer les slider des cours
 #separateur
 {
     width:100vw;
@@ -121,7 +121,7 @@ Liste des blocs de cours par type_de_cours
         }
     }
 }
-
+//style annonce section
 #annonce
 
 {
@@ -133,7 +133,7 @@ Liste des blocs de cours par type_de_cours
     animation-iteration-count: infinite;
   
 }
-
+//animation des annonces
 @keyframes blink {
     from {background-color: #66fcf1;}
     to {background-color: white;}

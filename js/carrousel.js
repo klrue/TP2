@@ -1,3 +1,4 @@
+//Fonction pour le rpemier carrousel réalisé, qui n'est plus en fonction
 (function(){
 			let bout1 = document.getElementById('un')
 			console.log(bout1.id)

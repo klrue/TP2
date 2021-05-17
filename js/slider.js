@@ -1,3 +1,4 @@
+//fonction pour créer les slider de cours pour la page d'Accueil
 (function(){
 	/* Idntifier la collection de carrousel */
 		let carrousel = document.querySelectorAll('.carrousel-2')
